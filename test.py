@@ -5,6 +5,7 @@ def run(playwright: Playwright):
     browser = chromium.launch()
     page = browser.new_page()
     page.goto("http://example.com")
+    print(page.title())
     # other actions...
     browser.close()
 
