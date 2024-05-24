@@ -8,8 +8,8 @@ RUN pip install asyncio jupyterlab
 
 RUN playwright install
 
-COPY . .
-
 WORKDIR /app
+
+COPY . . 
 
 ENTRYPOINT [ "/bin/bash" ]
