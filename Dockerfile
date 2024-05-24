@@ -4,7 +4,7 @@ RUN apt-get update && apt-get install -y build-essential libssl-dev vim nano
 
 RUN pip install pytest-playwright
 
-RUN pip install asyncio
+RUN pip install asyncio jupyterlab
 
 RUN playwright install
 
